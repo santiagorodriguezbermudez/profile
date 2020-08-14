@@ -45,8 +45,8 @@ Postgres: >=9.5
 ## Authors
 👤 Santiago Rodriguez
 - Github: [@srba87](https://github.com/santiagorodriguezbermudez)
-- Twitter: [@srba87](https://twitter.com/srba)
-- Linkedin: [srba87](https://linkedin.com/in/srba87)
+- Twitter: [@srba87](https://twitter.com/srba87)
+- Linkedin: [srba87](https://linkedin.com/in/srba)
 
 
 ## Credits
