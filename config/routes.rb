@@ -1,3 +1,16 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  get 'projects/new'
+  get 'projects/create'
+  get 'users/new'
+  get 'users/show'
+  # resources :projects, only: [:create, :new, :index, :show]
+
+  controller :sessions do
+    get 'login' => :new
+    post 'login' => :create
+    delete 'logout' => :destroy
+  end
+
+  # resources :users, only: [:show]
+  # root '/'
 end
