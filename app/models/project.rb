@@ -1,4 +1,5 @@
 class Project < ApplicationRecord
+  belongs_to :user
   validates :title, :short_description, :long_description, :company, :role, :year, :stacks, :live_url, presence: true
   has_attached_file :image, styles: { medium: '300x300#', thumb: '100x100#' }
   validates_attachment_content_type :image, content_type: ['image/jpg', 'image/jpeg', 'image/png']

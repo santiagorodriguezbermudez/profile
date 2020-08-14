@@ -1,6 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Project do
+  let(:test_user) { User.create(user_name: 'Example User', password: 'secret', password_confirmation: 'secret') }
   let(:subject) do
     described_class.new(
       title: 'Testing Project',
@@ -10,7 +11,8 @@ RSpec.describe Project do
       role: 'test role',
       year: 2020,
       stacks: %w[html css],
-      live_url: 'Link to demo'
+      live_url: 'Link to demo',
+      user_id: test_user.id
     )
   end
 
@@ -18,5 +20,9 @@ RSpec.describe Project do
     it 'is valid with valid attributes' do
       expect(subject).to be_valid
     end
+  end
+
+  describe 'Associations', type: :model do
+    it { should belong_to(:user) }
   end
 end
