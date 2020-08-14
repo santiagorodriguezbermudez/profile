@@ -3,8 +3,10 @@ class SessionsController < ApplicationController
 
   def new; end
 
+  def landing; end
+
   def create
-    user = User.find_by(name: params[:name])
+    user = User.find_by(user_name: params[:user_name])
     if user.try(:authenticate, params[:password])
       session[:user_id] = user.id
       redirect_to root_path(user.id)

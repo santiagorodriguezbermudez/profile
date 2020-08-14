@@ -1,0 +1,27 @@
+<%= form_with(model: project, local: true) do |form| %>
+
+  <%= form.file_field :image, class: 'custom-file-input mb-3' %>
+  <%= form.text_field :title, placeholder: 'Type the project name' %>
+  <%= form.text_field :short_description, placeholder: 'Type the project short description' %>
+  <%= form.text_field :long_description, placeholder: 'Type the project long description', rows:10, cols: 60  %>
+  <%= form.text_field :stacks, placeholder: 'Separate them by comma' %>
+  <%= form.text_field :company, placeholder: 'Type the project company' %>
+  <%= form.text_field :role, placeholder: 'Type the project role' %>
+  <%= form.number_field :year, placeholder: "Project's year" %>
+  <%= form.text_field :repo_url, placeholder: 'Type the project repo link' %>
+  <%= form.text_field :live_url, placeholder: 'Type the project demo link' %>
+
+  <%= form.submit %>
+
+  <% if project.errors.any? %>
+    <div id="error_explanation" class="m-5 border border-danger rounded p-5">
+      <h2><%= pluralize(project.errors.count, "error") %> prevented the project from being saved, please correct the following:</h2>
+
+      <ul class='pl-0'>
+        <% project.errors.full_messages.each do |message| %>
+          <p class='mx-0 px-0 text-danger text-bold'><%= message %></p>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+<% end %>
