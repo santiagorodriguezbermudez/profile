@@ -3,7 +3,9 @@ class SessionsController < ApplicationController
 
   def new; end
 
-  def landing; end
+  def landing
+    @projects = Project.latest_projects
+  end
 
   def create
     user = User.find_by(user_name: params[:user_name])

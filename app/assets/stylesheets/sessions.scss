@@ -1,3 +1,39 @@
 // Place all the styles related to the Sessions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: https://sass-lang.com/
+
+
+.navbar {
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .logo {
+    display: flex;
+    flex-direction: row;
+    padding: 10px 12px;
+    width: 100px;
+    height: 40px;
+    margin-left: 140px;
+  }
+
+  .item-navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-right: 140px;
+
+    a {
+      padding: 7px;
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 15px;
+      line-height: 20px;
+      color: #344563;
+      text-decoration: none;
+    }
+  }
+}
+

@@ -13,3 +13,176 @@
  *= require_tree .
  *= require_self
  */
+
+ @font-face {
+  font-family: 'Poppins';
+  src: asset-url('Poppins-BoldItalic.woff2') format('woff2'),
+      asset-url('Poppins-BoldItalic.woff') format('woff');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: asset-url('Poppins-SemiBold.woff2') format('woff2'),
+      asset-url('Poppins-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: asset-url('Poppins-Medium.woff2') format('woff2'),
+      asset-url('Poppins-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: asset-url('Poppins-Regular.woff2') format('woff2'),
+      asset-url('Poppins-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: asset-url('Poppins-ExtraLightItalic.woff2') format('woff2'),
+      asset-url('Poppins-ExtraLightItalic.woff') format('woff');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: asset-url('Poppins-ExtraLight.woff2') format('woff2'),
+      asset-url('Poppins-ExtraLight.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: asset-url('Poppins-ExtraBold.woff2') format('woff2'),
+      asset-url('Poppins-ExtraBold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: asset-url('Poppins-ExtraBoldItalic.woff2') format('woff2'),
+      asset-url('Poppins-ExtraBoldItalic.woff') format('woff');
+  font-weight: 800;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: asset-url('Poppins-BlackItalic.woff2') format('woff2'),
+      asset-url('Poppins-BlackItalic.woff') format('woff');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: asset-url('Poppins-SemiBoldItalic.woff2') format('woff2'),
+      asset-url('Poppins-SemiBoldItalic.woff') format('woff');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: asset-url('Poppins-LightItalic.woff2') format('woff2'),
+      asset-url('Poppins-LightItalic.woff') format('woff');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: asset-url('Poppins-ThinItalic.woff2') format('woff2'),
+      asset-url('Poppins-ThinItalic.woff') format('woff');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: asset-url('Poppins-Light.woff2') format('woff2'),
+      asset-url('Poppins-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: asset-url('Poppins-Black.woff2') format('woff2'),
+      asset-url('Poppins-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: asset-url('Poppins-Italic.woff2') format('woff2'),
+      asset-url('Poppins-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: asset-url('Poppins-Thin.woff2') format('woff2'),
+      asset-url('Poppins-Thin.woff') format('woff');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: asset-url('Poppins-Bold.woff2') format('woff2'),
+      asset-url('Poppins-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: asset-url('Poppins-MediumItalic.woff2') format('woff2'),
+      asset-url('Poppins-MediumItalic.woff') format('woff');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+.main {
+  background-color: #E5E5E5;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+
+
+
+
