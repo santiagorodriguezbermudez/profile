@@ -1,0 +1,17 @@
+<section class='contact-form'>
+  <% if flash[:alert] %>
+    <aside class="notice"><%= flash[:alert] %></aside>
+  <% end %>
+
+  <%= form_tag do %>
+    <h2>Contact Me</h2>
+
+    <p>Reach out if you need help building an awesome product. I can help you out with strategy, product, implementing or any advisory about a product</p>
+  
+    <%= text_field_tag :name, params[:name], placeholder: 'Type in your name' %>
+    <%= email_field_tag :email, params[:email], placeholder: 'Type inf your email' %>
+    <%= text_area_tag :message, params[:email], placeholder: 'Let me know what do you need help with?', cols: 70, rows: 10 %>  
+    <%= submit_tag "Send", class: 'submit-button' %>
+
+  <% end %>
+</section>
