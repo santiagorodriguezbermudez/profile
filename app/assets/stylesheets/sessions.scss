@@ -175,6 +175,49 @@
       display: block;
     }
   }
+}
 
+.about-myself {
+  background-image: asset-url('about-myself-background.png');
+  background-size: cover;
+  background-position: top;
 
+  .self-description {
+    margin: 0 25px;
+    font-family: Poppins;
+    font-style: normal;
+    
+    h2 {
+      font-weight: 500;
+      font-size: 40px;
+      line-height: 52px;
+      color: #091E42;
+      margin: 5px 0;
+    }
+
+    h5 {
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 24px;
+      color: #6B778C;
+      margin: 5px 0;
+    }
+
+    .connect-text {
+      font-family: Poppins;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: #7F8CFF;
+    }
+
+    .icons a:first-of-type {
+      margin-left: 0;
+    }
+    
+    .icons a {
+      margin: 7px;
+    }
+  }
 }
