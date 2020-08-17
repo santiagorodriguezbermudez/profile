@@ -34,11 +34,10 @@
 
 
 <div class="list-portfolio">
-
   <% @projects.each_with_index do |project, index| %>
     <div class="project-container">
-      <%= first_item(index, project) %>
-      <%= second_item(index, project) %>
+      <%= raw first_item(index, project) %>
+      <%= raw second_item(index, project) %>
     </div>
   <% end %>
 
