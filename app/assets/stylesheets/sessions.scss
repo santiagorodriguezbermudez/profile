@@ -4,6 +4,7 @@
 
 
 .navbar {
+  margin-bottom: 0 !important;
   background: #FFFFFF;
   height: 70px;
   display: flex;
@@ -167,8 +168,8 @@
       font-weight: 500;
       font-size: 17px;
       line-height: 24px;
-      width: 100px;
-      height: 24px;
+      width: 120px;
+      height: 45px;
       text-decoration: none;
       padding: 10px;
       margin-top: 20px;
@@ -181,11 +182,17 @@
   background-image: asset-url('about-myself-background.png');
   background-size: cover;
   background-position: top;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 100px;
 
   .self-description {
     margin: 0 25px;
     font-family: Poppins;
     font-style: normal;
+    width: 30%;
     
     h2 {
       font-weight: 500;
@@ -218,6 +225,42 @@
     
     .icons a {
       margin: 7px;
+    }
+  }
+
+  .information {
+
+    .information-category {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin: 5px;
+
+      h5 {
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+      }
+    }
+
+    .category-icons {
+      display: flex;
+
+      .information-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin: 15px;
+      }
+      .item {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 20%;
+        margin: 5px;
+      }
     }
   }
 }
