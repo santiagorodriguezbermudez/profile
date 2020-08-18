@@ -1,9 +1,13 @@
-<section class='contact-form'>
+<section class='contact-form' id='contact'>
   <% if flash[:alert] %>
     <aside class="notice"><%= flash[:alert] %></aside>
   <% end %>
 
+
   <%= form_tag do %>
+    <% if flash[:notice] %>
+    <div class="contact-success"><%= flash[:notice] %></div>
+    <% end %> 
     <h2>Contact Me</h2>
 
     <p>Reach out if you need help building an awesome product. I can help you out with strategy, product, implementing or any advisory about a product</p>

@@ -12,6 +12,7 @@ class SessionsController < ApplicationController
     email = params[:email]
     message = params[:message]
     VisitorMailer.with(name: name, email: email, message: message).new_lead_email.deliver_later
+    redirect_to '/#contact', notice: "#{name} thanks for reaching out. I'll reply to your provided email."
   end
 
   def create

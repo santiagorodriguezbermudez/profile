@@ -5,9 +5,9 @@
   </div>
 
   <ul class="item-navigation">
-    <a href='#'>Portfolio</a>
-    <a href='#'>About</a>
-    <a href='#'>Contact</a>
+    <a href='#portfolio'>Portfolio</a>
+    <a href='#about'>About</a>
+    <a href='#contact'>Contact</a>
   </ul>
 
 </nav>
@@ -31,8 +31,7 @@
   </div>
 </header>
 
-
-<div class="list-portfolio">
+<div class="list-portfolio" id='portfolio'>
   <% @projects.each_with_index do |project, index| %>
     <div class="project-container">
       <%= raw first_item(index, project) %>
@@ -43,7 +42,7 @@
 </div>
 
 
-<section class="about-myself">
+<section class="about-myself" id='about'>
   <div class="self-description">
     <h2>About myself</h2>
     <h5>I'm passionate about building products. I've worked on startups and founded companies as well. I recently studied software development to create even better products.</h5>
