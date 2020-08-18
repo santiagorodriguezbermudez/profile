@@ -4,7 +4,7 @@ class Project < ApplicationRecord
   has_attached_file :image, styles: { medium: '300x300#', thumb: '100x100#' }
   validates_attachment_content_type :image, content_type: ['image/jpg', 'image/jpeg', 'image/png']
 
-  scope :last_projects, -> { order(year: :desc).limit(4) }
+  scope :last_projects, -> { order(created_at: :asc).limit(4) }
 
   def self.latest_projects
     pluck_to_hash(Project.last_projects.pluck(:title,
