@@ -10,7 +10,7 @@
   
     <%= text_field_tag :name, params[:name], placeholder: 'Type in your name' %>
     <%= email_field_tag :email, params[:email], placeholder: 'Type inf your email' %>
-    <%= text_area_tag :message, params[:email], placeholder: 'Let me know what do you need help with?', cols: 70, rows: 10 %>  
+    <%= text_area_tag :message, params[:email], placeholder: 'Let me know what do you need help with?', rows: 10 %>  
     <%= submit_tag "Send", class: 'submit-button' %>
 
   <% end %>
