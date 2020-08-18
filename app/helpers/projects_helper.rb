@@ -29,8 +29,8 @@ module ProjectsHelper
   def modal(project, index)
     project_image = (image_tag project[:image_url], class: 'modal-img').html_safe
     stacks = project[:stacks].inject('') { |string, el| string + "<span>#{el}</span>" }
-    repo_link = project[:repo_url] == '' ? (link_to 'See Repo', project[:repo_url], class: 'modal-link').html_safe : ''
-    live_link = (link_to 'See live', project[:live_url], class: 'modal-link').html_safe
+    repo_link = project[:repo_url] != '' ? (link_to 'See Repo', project[:repo_url], class: 'modal-link').html_safe : ''
+    live_link = (link_to 'See Live', project[:live_url], class: 'modal-link').html_safe
 
     "<div class='modal fade' id='projectModal#{index}' tabindex='-1' role='dialog'\
      aria-labelledby='projectModal#{index}Title' aria-hidden='true'>\
