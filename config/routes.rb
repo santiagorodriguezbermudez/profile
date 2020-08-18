@@ -6,6 +6,7 @@ Rails.application.routes.draw do
     post 'login' => :create
     delete 'logout' => :destroy
     get 'landing' => :landing
+    post 'landing' => :new_lead
   end
   
   root 'sessions#landing'

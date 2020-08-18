@@ -7,6 +7,10 @@ class SessionsController < ApplicationController
     @projects = Project.latest_projects
   end
 
+  def new_lead
+    VisitorMailer.with(name: params[:name], email: params[:email], message: params[:message]).new_lead_email.deliver_later
+  end
+
   def create
     user = User.find_by(user_name: params[:user_name])
     if user.try(:authenticate, params[:password])

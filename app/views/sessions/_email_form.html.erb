@@ -8,9 +8,9 @@
 
     <p>Reach out if you need help building an awesome product. I can help you out with strategy, product, implementing or any advisory about a product</p>
   
-    <%= text_field_tag :name, params[:name], placeholder: 'Type in your name' %>
-    <%= email_field_tag :email, params[:email], placeholder: 'Type inf your email' %>
-    <%= text_area_tag :message, params[:email], placeholder: 'Let me know what do you need help with?', rows: 10 %>  
+    <%= text_field_tag :name, params[:name], placeholder: 'Type your name' %>
+    <%= email_field_tag :email, params[:email], placeholder: 'Type your email' %>
+    <%= text_area_tag :message, params[:message], placeholder: 'How can I help you?', rows: 10 %>  
     <%= submit_tag "Send", class: 'submit-button' %>
 
   <% end %>
