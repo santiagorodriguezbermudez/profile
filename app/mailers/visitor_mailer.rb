@@ -7,7 +7,4 @@ class VisitorMailer < ApplicationMailer
     @message = params[:message]
     mail(to: 'srba87@gmail.com', subject: 'New lead on portfolio')
   end
-
-
-
 end

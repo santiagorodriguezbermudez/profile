@@ -8,7 +8,10 @@ class SessionsController < ApplicationController
   end
 
   def new_lead
-    VisitorMailer.with(name: params[:name], email: params[:email], message: params[:message]).new_lead_email.deliver_later
+    name = params[:name]
+    email = params[:email]
+    message = params[:message]
+    VisitorMailer.with(name: name, email: email, message: message).new_lead_email.deliver_later
   end
 
   def create

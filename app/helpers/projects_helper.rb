@@ -1,5 +1,4 @@
 module ProjectsHelper
-
   def first_item(order, project)
     order.even? ? img_portfolio(project) : description_portfolio(project, order)
   end
@@ -13,7 +12,7 @@ module ProjectsHelper
   end
 
   def description_portfolio(project, index)
-    stacks = project[:stacks].inject(''){ |string, el| string += "<span>#{el}</span>"}
+    stacks = project[:stacks].inject('') { |string, el| string + "<span>#{el}</span>" }
 
     project_link = "<button type='button' class='project-link' data-toggle='modal' data-target='#projectModal#{index}'>\
       See Project\
@@ -27,14 +26,14 @@ module ProjectsHelper
     </div>".html_safe
   end
 
-  def modal (project, index)
+  def modal(project, index)
     project_image = (image_tag project[:image_url], class: 'modal-img').html_safe
-    stacks = project[:stacks].inject(''){ |string, el| string += "<span>#{el}</span>"}
+    stacks = project[:stacks].inject('') { |string, el| string + "<span>#{el}</span>" }
     repo_link = project[:repo_url] == '' ? (link_to 'See Repo', project[:repo_url], class: 'modal-link').html_safe : ''
     live_link = (link_to 'See live', project[:live_url], class: 'modal-link').html_safe
 
-
-    "<div class='modal fade' id='projectModal#{index}' tabindex='-1' role='dialog' aria-labelledby='projectModal#{index}Title' aria-hidden='true'>\
+    "<div class='modal fade' id='projectModal#{index}' tabindex='-1' role='dialog'\
+     aria-labelledby='projectModal#{index}Title' aria-hidden='true'>\
       <div class='modal-dialog modal-dialog-centered modal-lg' role='document'>\
         <div class='modal-content'>\
           <div class='modal-header'>\
@@ -46,7 +45,7 @@ module ProjectsHelper
           </div>\
           <div>\
             #{project_image}\
-          </div>  
+          </div>
           <div class='modal-description'>\
             <p>\
               #{project[:long_description]}\
